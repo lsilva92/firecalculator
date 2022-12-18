@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex row justify-content-center position-absolute top-50 start-50 translate-middle w-50 h-30">
+        <div class="d-flex flex-column col">
+            <div class="d-flex flex-column justify-content-center">
+                <h3>
+                    Calculate How many years until Retirement <br>
+                    <small class="text-muted d-flex flex-row">Input Data --></small>
+                </h3>
+            </div>
+        
+            <div class="d-flex flex-row justify-content-center">
+                <p class="h5" id="yearsUntilRetire"></p>
+            </div>
+        </div>
+        <div class=" row col">
+            <form id="fire-form">
+                <!--<label for="validationCustom01">Annual Expenses:</label>-->
+                <div class="input-group input-group-sm mb-2">
+                    <span class="input-group-text">€</span>
+                    <input type="number" id="annual-expenses" name="annual-expenses" class="form-control" placeholder="Annual Expenses" required>
+                </div>
+                <!--<label for="money-invested">Money Invested:</label>-->
+                <div class="input-group input-group-sm mb-2">
+                    <span class="input-group-text">€</span>
+                    <input type="number" id="money-invested" name="money-invested" class="form-control" placeholder="Money Invested" required>
+                </div>
+                <!--<label for="annual-growth">Annual Growth:</label>-->
+                <div class="input-group input-group-sm mb-2">
+                    <span class="input-group-text">%</span>
+                    <input type="number" id="annual-growth" name="annual-growth" class="form-control" placeholder="Annual Growth" required>
+                </div>
+                <!--<label for="contributions">Contributions:</label>-->
+                <div class="input-group input-group-sm mb-2">
+                    <span class="input-group-text">€</span>
+                    <input type="number" id="contributions" name="contributions" class="form-control" placeholder="Annual Contributions" required>
+                </div>
+                <div class="input-group mb-2">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+      
+      <script src="js/main.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
